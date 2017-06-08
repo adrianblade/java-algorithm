@@ -1,4 +1,4 @@
-package BFS.webCrawler;
+package bfs.webCrawler;
 
 /**
  * Created by Adrian on 04/06/2017.

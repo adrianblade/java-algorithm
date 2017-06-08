@@ -1,6 +1,4 @@
-package BFS.webCrawler;
-
-import BFS.Vertex;
+package bfs.webCrawler;
 
 import java.io.BufferedReader;
 import java.io.IOException;

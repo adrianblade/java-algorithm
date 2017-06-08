@@ -1,4 +1,4 @@
-package BFS;
+package bfs;
 
 /**
  * Created by Adrian on 04/06/2017.

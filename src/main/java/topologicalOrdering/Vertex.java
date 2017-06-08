@@ -1,4 +1,4 @@
-package BFS.webCrawler;
+package topologicalOrdering;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,13 +7,12 @@ import java.util.List;
  * Created by Adrian on 04/06/2017.
  */
 public class Vertex {
-    private int name;
+    private String data;
     private boolean visited;
-    private Vertex previousVertex;
     private List<Vertex> adjacenciesList;
 
-    public Vertex(int name) {
-        this.name = name;
+    public Vertex(String data) {
+        this.data = data;
         this.adjacenciesList = new ArrayList<Vertex>();
     }
 
@@ -21,12 +20,12 @@ public class Vertex {
         this.adjacenciesList.add(vertex);
     }
 
-    public int getName() {
-        return name;
+    public String getData() {
+        return data;
     }
 
-    public void setName(int name) {
-        this.name = name;
+    public void setData(String data) {
+        this.data = data;
     }
 
     public boolean isVisited() {
@@ -35,14 +34,6 @@ public class Vertex {
 
     public void setVisited(boolean visited) {
         this.visited = visited;
-    }
-
-    public Vertex getPreviousVertex() {
-        return previousVertex;
-    }
-
-    public void setPreviousVertex(Vertex previousVertex) {
-        this.previousVertex = previousVertex;
     }
 
     public List<Vertex> getAdjacenciesList() {
@@ -55,9 +46,8 @@ public class Vertex {
 
     @Override
     public String toString() {
-        return "Vertex{" +
-                "name=" + name +
-                '}';
+        return data;
     }
 }
+
 

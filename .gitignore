@@ -1,0 +1,42 @@
+# Java 
+.class
+.jar
+.war
+.ear
+hs_err_pid*
+
+# Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+.settings/
+.project
+.classpath
+.tern-project
+
+# OSX
+.DS_Store
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# IntelliJ
+*.iml
+.idea/
+
+# Maven
+target/
+
+# TNG
+deployment/deploy/
+
+# OpenDocument
+.~lock.*.odt#
+
+# NODE
+node_modules
