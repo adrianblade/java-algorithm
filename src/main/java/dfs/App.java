@@ -1,5 +1,7 @@
 package dfs;
 
+import common.Vertex;
+
 /**
  * Created by Adrian on 04/06/2017.
  */

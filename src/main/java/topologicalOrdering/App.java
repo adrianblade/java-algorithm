@@ -1,5 +1,7 @@
 package topologicalOrdering;
 
+import common.Vertex;
+
 /**
  * Created by Adrian on 08/06/2017.
  */

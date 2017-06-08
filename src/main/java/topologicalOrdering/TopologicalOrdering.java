@@ -1,5 +1,7 @@
 package topologicalOrdering;
 
+import common.Vertex;
+
 import java.util.Stack;
 
 /**

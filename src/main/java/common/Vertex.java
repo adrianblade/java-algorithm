@@ -1,16 +1,20 @@
-package topologicalOrdering;
+package common;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Adrian on 04/06/2017.
+ * Created by Adrian on 08/06/2017.
  */
 public class Vertex {
     private String data;
     private boolean visited;
     private List<Vertex> adjacenciesList;
 
+    //PREDECESOR
+    private Vertex precedessor;
+
+    //CONSTRUCTORS
     public Vertex(String data) {
         this.data = data;
         this.adjacenciesList = new ArrayList<Vertex>();
@@ -44,10 +48,11 @@ public class Vertex {
         this.adjacenciesList = adjacenciesList;
     }
 
-    @Override
-    public String toString() {
-        return data;
+    public Vertex getPrecedessor() {
+        return precedessor;
+    }
+
+    public void setPrecedessor(Vertex precedessor) {
+        this.precedessor = precedessor;
     }
 }
-
-

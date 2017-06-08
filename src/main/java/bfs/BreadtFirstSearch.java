@@ -1,5 +1,7 @@
 package bfs;
 
+import common.Vertex;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -17,7 +19,7 @@ public class BreadtFirstSearch {
             Vertex actualVertex = queue.remove();
             System.out.println(actualVertex + "-");
 
-            for (Vertex vertex : actualVertex.getNeighbourList()) {
+            for (Vertex vertex : actualVertex.getAdjacenciesList()) {
                 if (!vertex.isVisited()) {
                     vertex.setVisited(true);
                     queue.add(vertex);

@@ -1,5 +1,7 @@
 package dfs;
 
+import common.Vertex;
+
 import java.util.Stack;
 
 /**
