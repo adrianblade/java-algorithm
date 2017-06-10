@@ -22,6 +22,20 @@ Depth-first search (DFS) is an algorithm for traversing or searching tree or gra
 
 Una Búsqueda en profundidad (en inglés DFS o Depth First Search) es un algoritmo que permite recorrer todos los nodos de un grafo o árbol (teoría de grafos) de manera ordenada, pero no uniforme. Su funcionamiento consiste en ir expandiendo todos y cada uno de los nodos que va localizando, de forma recurrente, en un camino concreto. Cuando ya no quedan más nodos que visitar en dicho camino, regresa (Backtracking), de modo que repite el mismo proceso con cada uno de los hermanos del nodo ya procesado.
 
+****Maze Solver****
+
+***[en_GB]***
+
+There are a number of different maze solving algorithms, that is, automated methods for the solving of mazes. The random mouse, wall follower, Pledge, and Trémaux's algorithms are designed to be used inside the maze by a traveler with no prior knowledge of the maze, whereas the dead-end filling and shortest path algorithms are designed to be used by a person or computer program that can see the whole maze at once.
+
+Mazes containing no loops are known as "simply connected", or "perfect" mazes, and are equivalent to a tree in graph theory. Thus many maze solving algorithms are closely related to graph theory. Intuitively, if one pulled and stretched out the paths in the maze in the proper way, the result could be made to resemble a tree.
+
+***[es_ES]***
+
+Hay una serie de algoritmos de resolución de laberintos. Con un previo conocimiento del laberinto, busca un trayecto más corto y están diseñados para ser utilizados por una persona o un programa informático que pueda ver todo el laberinto a la vez.
+Los laberintos que no contienen bucles se conocen como laberintos "simplemente conectados" o "perfectos", y son equivalentes a un árbol en la teoría de grafos. Así, muchos algoritmos de resolución de laberintos están estrechamente relacionados con la teoría de grafos.
+
+
 **03 - Shortest Path**
 
 **04 - Artificial Intelligence**
