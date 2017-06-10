@@ -15,6 +15,10 @@ public class DFS {
         this.stack = new Stack<Vertex>();
     }
 
+    /**
+     * DFS simple mode
+     * @param root
+     */
     public void dfs(Vertex root) {
         stack.add(root);
         root.setVisited(true);
@@ -32,6 +36,10 @@ public class DFS {
         }
     }
 
+    /**
+     * DFS Recursive mode
+     * @param vertex
+     */
     public void recursiveDfs(Vertex vertex) {
         System.out.println(vertex + " ");
 

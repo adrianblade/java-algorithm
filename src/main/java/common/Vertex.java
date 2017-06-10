@@ -14,6 +14,9 @@ public class Vertex {
     //PREDECESOR
     private Vertex precedessor;
 
+    //BEING_VISITED
+    private boolean beingVisited;
+
     //CONSTRUCTORS
     public Vertex(String data) {
         this.data = data;
@@ -54,5 +57,20 @@ public class Vertex {
 
     public void setPrecedessor(Vertex precedessor) {
         this.precedessor = precedessor;
+    }
+
+    public boolean isBeingVisited() {
+        return beingVisited;
+    }
+
+    public void setBeingVisited(boolean beingVisited) {
+        this.beingVisited = beingVisited;
+    }
+
+    @Override
+    public String toString() {
+        return "Vertex{" +
+                "data='" + data + '\'' +
+                '}';
     }
 }

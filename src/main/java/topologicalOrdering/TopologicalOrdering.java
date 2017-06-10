@@ -15,6 +15,10 @@ public class TopologicalOrdering {
         this.stack = new Stack<Vertex>();
     }
 
+    /**
+     * DFS for topological Ordering
+     * @param vertex
+     */
     public void dfs(Vertex vertex) {
         vertex.setVisited(true);
 

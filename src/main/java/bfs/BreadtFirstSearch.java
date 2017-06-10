@@ -10,6 +10,10 @@ import java.util.Queue;
  */
 public class BreadtFirstSearch {
 
+    /**
+     * BFS (BreadtFirstSearch)
+     * @param root
+     */
     public void bfs(Vertex root) {
         Queue<Vertex> queue = new LinkedList<Vertex>();
 

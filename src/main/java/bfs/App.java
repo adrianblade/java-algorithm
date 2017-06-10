@@ -6,6 +6,10 @@ import common.Vertex;
  * Created by Adrian on 04/06/2017.
  */
 public class App {
+    /**
+     * BFS Main
+     * @param args
+     */
     public static void main (String[] args) {
         BreadtFirstSearch breadtFirstSearch = new BreadtFirstSearch();
 

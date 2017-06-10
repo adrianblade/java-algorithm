@@ -6,6 +6,11 @@ import common.Vertex;
  * Created by Adrian on 04/06/2017.
  */
 public class App {
+
+    /**
+     * DFS Main
+     * @param args
+     */
     public static void main (String[] args) {
         Vertex vertexA = new Vertex("A");
         Vertex vertexB = new Vertex("B");

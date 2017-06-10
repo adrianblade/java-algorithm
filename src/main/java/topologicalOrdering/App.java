@@ -6,6 +6,11 @@ import common.Vertex;
  * Created by Adrian on 08/06/2017.
  */
 public class App {
+
+    /**
+     * Topological Ordering Main
+     * @param args
+     */
     public static void main(String[] args) {
         Vertex vertexA = new Vertex("A");
         Vertex vertexB = new Vertex("B");
