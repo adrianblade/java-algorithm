@@ -1,5 +1,8 @@
 package dijskstra;
 
+import algorithmCommon.Edge;
+import algorithmCommon.VertexAlgorithm;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -10,16 +13,16 @@ import java.util.PriorityQueue;
  */
 public class Algorithm {
 
-    public void computePaths(VertexDijkstra sourceVertex) {
+    public void computePaths(VertexAlgorithm sourceVertex) {
         sourceVertex.setMinDistance(0);
-        PriorityQueue<VertexDijkstra> priorityQueue = new PriorityQueue<VertexDijkstra>();
+        PriorityQueue<VertexAlgorithm> priorityQueue = new PriorityQueue<VertexAlgorithm>();
         priorityQueue.add(sourceVertex);
 
         while (!priorityQueue.isEmpty()) {
-            VertexDijkstra actualVertex = priorityQueue.poll();
+            VertexAlgorithm actualVertex = priorityQueue.poll();
             for (Edge edge : actualVertex.getAdjacenciesEdgeList()) {
 
-                VertexDijkstra v = edge.getTargetVertex();
+                VertexAlgorithm v = edge.getTargetVertex();
                 double weight = edge.getWeight();
                 double minDistanceViaV = actualVertex.getMinDistance() + weight;
 
@@ -34,9 +37,9 @@ public class Algorithm {
 
     }
 
-    public List<VertexDijkstra> getShortestPathTo(VertexDijkstra targetVertex) {
-        List<VertexDijkstra> path = new ArrayList<VertexDijkstra>();
-        for (VertexDijkstra vertex = targetVertex; vertex != null; vertex = vertex.getPreviousVertex()) {
+    public List<VertexAlgorithm> getShortestPathTo(VertexAlgorithm targetVertex) {
+        List<VertexAlgorithm> path = new ArrayList<VertexAlgorithm>();
+        for (VertexAlgorithm vertex = targetVertex; vertex != null; vertex = vertex.getPreviousVertex()) {
             path.add(vertex);
         }
         Collections.reverse(path);

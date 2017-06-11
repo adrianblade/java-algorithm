@@ -1,16 +1,14 @@
-package dijskstra;
-
-import common.Vertex;
+package algorithmCommon;
 
 /**
  * Created by Adrian on 11/06/2017.
  */
 public class Edge {
     private double weight;
-    private VertexDijkstra startVertex;
-    private VertexDijkstra targetVertex;
+    private VertexAlgorithm startVertex;
+    private VertexAlgorithm targetVertex;
 
-    public Edge(double weight, VertexDijkstra startVertex, VertexDijkstra targetVertex) {
+    public Edge(double weight, VertexAlgorithm startVertex, VertexAlgorithm targetVertex) {
         this.weight = weight;
         this.startVertex = startVertex;
         this.targetVertex = targetVertex;
@@ -24,19 +22,19 @@ public class Edge {
         this.weight = weight;
     }
 
-    public VertexDijkstra getStartVertex() {
+    public VertexAlgorithm getStartVertex() {
         return startVertex;
     }
 
-    public void setStartVertex(VertexDijkstra startVertex) {
+    public void setStartVertex(VertexAlgorithm startVertex) {
         this.startVertex = startVertex;
     }
 
-    public VertexDijkstra getTargetVertex() {
+    public VertexAlgorithm getTargetVertex() {
         return targetVertex;
     }
 
-    public void setTargetVertex(VertexDijkstra targetVertex) {
+    public void setTargetVertex(VertexAlgorithm targetVertex) {
         this.targetVertex = targetVertex;
     }
 }

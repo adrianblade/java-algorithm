@@ -1,4 +1,4 @@
-package dijskstra;
+package algorithmCommon;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,14 +6,14 @@ import java.util.List;
 /**
  * Created by Adrian on 11/06/2017.
  */
-public class VertexDijkstra implements Comparable<VertexDijkstra>{
+public class VertexAlgorithm implements Comparable<VertexAlgorithm>{
     private String name;
     private List<Edge> adjacenciesEdgeList;
     private boolean visited;
-    private VertexDijkstra previousVertex;
+    private VertexAlgorithm previousVertex;
     private double minDistance = Double.MAX_VALUE;
 
-    public VertexDijkstra(String name) {
+    public VertexAlgorithm(String name) {
         this.name = name;
         this.adjacenciesEdgeList = new ArrayList<Edge>();
     }
@@ -47,11 +47,11 @@ public class VertexDijkstra implements Comparable<VertexDijkstra>{
         this.visited = visited;
     }
 
-    public VertexDijkstra getPreviousVertex() {
+    public VertexAlgorithm getPreviousVertex() {
         return previousVertex;
     }
 
-    public void setPreviousVertex(VertexDijkstra previousVertex) {
+    public void setPreviousVertex(VertexAlgorithm previousVertex) {
         this.previousVertex = previousVertex;
     }
 
@@ -63,7 +63,7 @@ public class VertexDijkstra implements Comparable<VertexDijkstra>{
         this.minDistance = minDistance;
     }
 
-    public int compareTo(VertexDijkstra otherVertex) {
+    public int compareTo(VertexAlgorithm otherVertex) {
         return Double.compare(this.minDistance, otherVertex.getMinDistance());
     }
 
