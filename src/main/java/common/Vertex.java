@@ -18,6 +18,11 @@ public class Vertex {
     private boolean beingVisited;
 
     //CONSTRUCTORS
+
+
+    public Vertex() {
+    }
+
     public Vertex(String data) {
         this.data = data;
         this.adjacenciesList = new ArrayList<Vertex>();
