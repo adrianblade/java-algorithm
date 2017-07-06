@@ -69,6 +69,14 @@ El algoritmo de Bellman-Ford (algoritmo de Bell-End-Ford) genera el camino más 
 
 **04 - Artificial Intelligence**
 
+***[en_GB]***
+
+In computer science, A* (pronounced as "A star") is a computer algorithm that is widely used in pathfinding and graph traversal, the process of plotting an efficiently directed path between multiple points, called nodes. It enjoys widespread use due to its performance and accuracy. However, in practical travel-routing systems, it is generally outperformed by algorithms which can pre-process the graph to attain better performance, although other work has found A* to be superior to other approaches
+
+***[es_ES]***
+
+El algoritmo de búsqueda A* (pronunciado "A asterisco" o "A estrella") se clasifica dentro de los algoritmos de búsqueda en grafos. El algoritmo A* encuentra, siempre y cuando se cumplan unas determinadas condiciones, el camino de menor coste entre un nodo origen y uno objetivo.
+
 **05 - Spanning Trees**
 
 **06 - Strongly Connected Components**
@@ -76,5 +84,3 @@ El algoritmo de Bellman-Ford (algoritmo de Bell-End-Ford) genera el camino más 
 **07 - Maximum Flow Problem**
 
 **08 - Travelling Salesman Problem**
-
-**09 - 10 Euler cycle - Chinese Postman Problem**
