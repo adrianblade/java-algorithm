@@ -79,6 +79,32 @@ El algoritmo de búsqueda A* (pronunciado "A asterisco" o "A estrella") se clasi
 
 **05 - Spanning Trees**
 
+***[en_GB]***
+
+Kruskal's algorithm is a minimum-spanning-tree algorithm which finds an edge of the least possible weight that connects any two trees in the forest. It is a greedy algorithm in graph theory as it finds a minimum spanning tree for a connected weighted graph adding increasing cost arcs at each step. This means it finds a subset of the edges that forms a tree that includes every vertex, where the total weight of all the edges in the tree is minimized. If the graph is not connected, then it finds a minimum spanning forest (a minimum spanning tree for each connected component).
+
+create a forest F (a set of trees), where each vertex in the graph is a separate tree
+create a set S containing all the edges in the graph
+while S is nonempty and F is not yet spanning
+remove an edge with minimum weight from S
+if the removed edge connects two different trees then add it to the forest F, combining two trees into a single tree
+At the termination of the algorithm, the forest forms a minimum spanning forest of the graph. If the graph is connected, the forest has a single component and forms a minimum spanning tree
+
+***[es_ES]***
+
+El algoritmo de Kruskal es un algoritmo de la teoría de grafos para encontrar un árbol recubridor mínimo en un grafo conexo y ponderado. Es decir, busca un subconjunto de aristas que, formando un árbol, incluyen todos los vértices y donde el valor total de todas las aristas del árbol es el mínimo. Si el grafo no es conexo, entonces busca un bosque expandido mínimo (un árbol expandido mínimo para cada componente conexa). El algoritmo de Kruskal es un ejemplo de algoritmo voraz.
+
+Un ejemplo de árbol expandido mínimo. Cada punto representa un vértice, el cual puede ser un árbol por sí mismo. Se usa el Algoritmo para buscar las distancias más cortas (árbol expandido) que conectan todos los puntos o vértices.
+Funciona de la siguiente manera:
+
+se crea un bosque B (un conjunto de árboles), donde cada vértice del grafo es un árbol separado
+se crea un conjunto C que contenga a todas las aristas del grafo
+mientras C es no vacío
+eliminar una arista de peso mínimo de C
+si esa arista conecta dos árboles diferentes se añade al bosque, combinando los dos árboles en un solo árbol
+en caso contrario, se desecha la arista
+Al acabar el algoritmo, el bosque tiene un solo componente, el cual forma un árbol de expansión mínimo del grafo.
+
 **06 - Strongly Connected Components**
 
 **07 - Maximum Flow Problem**
