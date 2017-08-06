@@ -107,6 +107,35 @@ Al acabar el algoritmo, el bosque tiene un solo componente, el cual forma un ár
 
 **06 - Strongly Connected Components**
 
-**07 - Maximum Flow Problem**
+Kosaraju
 
-**08 - Travelling Salesman Problem**
+***[en_GB]***
+
+n computer science, Kosaraju's algorithm (also known as the Kosaraju–Sharir algorithm) is a linear time algorithm to find the strongly connected components of a directed graph. Aho, Hopcroft and Ullman credit it to an unpublished paper from 1978 by S. Rao Kosaraju. The same algorithm was independently discovered by Micha Sharir and published by him in 1981. It makes use of the fact that the transpose graph (the same graph with the direction of every edge reversed) has exactly the same strongly connected components as the original graph.
+
+***[es_ES]***
+
+Este algoritmo se basa en el hecho de que si invertimos todas las arcos(aristas) de un grafo, las componentes fuermente conexas son las mismas que en el grafo original.
+
+Para hallar las componentes fuermente conexas de un grafo dirigido G :
+
+- Realiza una busqueda en profundidad sobre G y enumera los vértices.
+- Construye un nuevo grafo G' invirtiendo la dirección de todo los arco en G.
+- Realiza una búsqueda en profundidad sobre G' empezando por el vértice que fue enumerado con el mayor valor de acuerdo a la numeración asignada en el paso (1). Si la búsqueda en profundidad no alcanza todos los vértices, empieza la siguiente búsqueda en profundidad desde el vértice restante enumerado con el mayor valor.
+- Cada árbol obtenido luego de la búsqueda en profundidad es una componente fuertemente conexa.
+
+Tarjan
+
+***[en_GB]***
+
+Tarjan's algorithm is an algorithm in graph theory for finding the strongly connected components of a graph. It runs in linear time, matching the time bound for alternative methods including Kosaraju's algorithm and the path-based strong component algorithm. Tarjan's Algorithm is named for its discoverer, Robert Tarjan.
+
+***[es_ES]***
+
+Es un algoritmo de la teoría de grafos para encontrar las componentes fuertemente conexas de un gráfo . A pesar de que lo precede cronológicamente, puede ser visto como una versión mejorada del algoritmo de Kosaraju , y es comparable en eficiencia con el algoritmo de Gabow.
+
+El algoritmo toma un grafo dirigido como entrada, y produce una partición de los vértices del gráfico en las componentes fuertemente conexas del gráfico. 
+La idea básica del algoritmo es la siguiente: una búsqueda en profundidad comienza a partir de un nodo inicial cualquiera. Se lleva a cabo una busqueda en profundidad en los nodos que aún no han sido encontrados. La búsqueda no explora cualquier nodo que ya ha sido explorado. Las componentes fuertemente conexas forma los subárboles del árbol de búsqueda.
+Los nodos se colocan en una pila en el orden en que se visitan.posteriormente los nodos se toman de la pila y se determina si cada nodo es la raíz de una componente fuertemente conexa.
+
+**07 - Maximum Flow Problem**
