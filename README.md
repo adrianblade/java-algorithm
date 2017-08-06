@@ -139,3 +139,11 @@ La idea básica del algoritmo es la siguiente: una búsqueda en profundidad comi
 Los nodos se colocan en una pila en el orden en que se visitan.posteriormente los nodos se toman de la pila y se determina si cada nodo es la raíz de una componente fuertemente conexa.
 
 **07 - Maximum Flow Problem**
+
+***[en_GB]***
+
+The maximum flow problem can be seen as a special case of more complex network flow problems, such as the circulation problem. The maximum value of an s-t flow (i.e., flow from source s to sink t) is equal to the minimum capacity of an s-t cut (i.e., cut severing s from t) in the network, as stated in the max-flow min-cut theorem.
+
+***[es_ES]***
+
+ El algoritmo propone buscar caminos en los que se pueda aumentar el flujo, hasta que se alcance el flujo máximo.La idea es encontrar una ruta de penetración con un flujo positivo neto que una los nodos origen y destino.
