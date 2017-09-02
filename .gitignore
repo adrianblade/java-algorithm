@@ -32,9 +32,6 @@ Desktop.ini
 # Maven
 target/
 
-# TNG
-deployment/deploy/
-
 # OpenDocument
 .~lock.*.odt#
 
