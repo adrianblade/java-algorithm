@@ -1,6 +1,6 @@
-*ALGORITHMS*
+#ALGORITHMS
 
-**01 - Breadth First Search**
+# 01 - Breadth First Search
 
 ***[en_GB]***
 
@@ -12,7 +12,7 @@ En Ciencias de la Computación, Búsqueda en anchura es un algoritmo para recorr
 
 Formalmente, BFS es un algoritmo de búsqueda sin información, que expande y examina todos los nodos de un árbol sistemáticamente para buscar una solución. El algoritmo no usa ninguna estrategia heurística.
 
-**02 - Depth First Search**
+# 02 - Depth First Search
 
 ***[en_GB]***
 
@@ -36,7 +36,7 @@ Hay una serie de algoritmos de resolución de laberintos. Con un previo conocimi
 Los laberintos que no contienen bucles se conocen como laberintos "simplemente conectados" o "perfectos", y son equivalentes a un árbol en la teoría de grafos. Así, muchos algoritmos de resolución de laberintos están estrechamente relacionados con la teoría de grafos.
 
 
-**03 - Shortest Path**
+# 03 - Shortest Path
 
 
 Dijkstra
@@ -67,7 +67,7 @@ The Bellman–Ford algorithm is an algorithm that computes shortest paths from a
 
 El algoritmo de Bellman-Ford (algoritmo de Bell-End-Ford) genera el camino más corto en un grafo dirigido ponderado (en el que el peso de alguna de las aristas puede ser negativo). El algoritmo de Dijkstra resuelve este mismo problema en un tiempo menor, pero requiere que los pesos de las aristas no sean negativos, salvo que el grafo sea dirigido y sin ciclos. Por lo que el Algoritmo Bellman-Ford normalmente se utiliza cuando hay aristas con peso negativo. Este algoritmo fue desarrollado por Richard Bellman, Samuel End y Lester Ford.
 
-**04 - Artificial Intelligence**
+# 04 - Artificial Intelligence
 
 ***[en_GB]***
 
@@ -77,7 +77,7 @@ In computer science, A* (pronounced as "A star") is a computer algorithm that is
 
 El algoritmo de búsqueda A* (pronunciado "A asterisco" o "A estrella") se clasifica dentro de los algoritmos de búsqueda en grafos. El algoritmo A* encuentra, siempre y cuando se cumplan unas determinadas condiciones, el camino de menor coste entre un nodo origen y uno objetivo.
 
-**05 - Spanning Trees**
+# 05 - Spanning Trees
 
 ***[en_GB]***
 
@@ -105,7 +105,7 @@ si esa arista conecta dos árboles diferentes se añade al bosque, combinando lo
 en caso contrario, se desecha la arista
 Al acabar el algoritmo, el bosque tiene un solo componente, el cual forma un árbol de expansión mínimo del grafo.
 
-**06 - Strongly Connected Components**
+# 06 - Strongly Connected Components
 
 Kosaraju
 
@@ -138,7 +138,7 @@ El algoritmo toma un grafo dirigido como entrada, y produce una partición de lo
 La idea básica del algoritmo es la siguiente: una búsqueda en profundidad comienza a partir de un nodo inicial cualquiera. Se lleva a cabo una busqueda en profundidad en los nodos que aún no han sido encontrados. La búsqueda no explora cualquier nodo que ya ha sido explorado. Las componentes fuertemente conexas forma los subárboles del árbol de búsqueda.
 Los nodos se colocan en una pila en el orden en que se visitan.posteriormente los nodos se toman de la pila y se determina si cada nodo es la raíz de una componente fuertemente conexa.
 
-**07 - Maximum Flow Problem**
+# 07 - Maximum Flow Problem
 
 ***[en_GB]***
 
